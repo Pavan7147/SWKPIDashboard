@@ -1,0 +1,10 @@
+//to install the playwright
+npm init playwright@latest -- --quiet -browser=chromium -browser=firefox -browser=webkit
+//run code gen to inspect elements
+npx playwright codegen https://www.metrics-portal.philips.com/program_board
+//run the test folder sequentially
+npx playwright test tests
+// to run only a specific test case
+npm run test-1.spec.ts
+//to do the trace for the actions performed during the execution:import the trace file from playwright project folder
+npx playwright show-trace
